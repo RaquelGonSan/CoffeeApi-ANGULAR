@@ -1,0 +1,26 @@
+<div class="container">
+  <h3 class="text-center mt-5">My Cart</h3>
+
+  <div class="alert alert-warning" role="alert" *ngIf="!micoffees.length">
+     There are no coffees added to the cart
+  </div>
+
+  <mat-card class="example-card" *ngFor="let c of micoffees; let i= index">
+    <mat-card-header>
+      <mat-card-title>{{ c.name }}</mat-card-title>
+      <mat-card-subtitle>{{ c.region }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{ c.image_url }}" />
+    <mat-card-content>
+      <p class="text-center">{{ c.description }}</p>
+      <p class="span">Price: {{ c.price | currency }} </p>
+    </mat-card-content>
+    <mat-card-actions>
+          <div class="example-button-container">
+            <button class="button" mat-fab color="primary" (click)="deleteCoffee(i)"> 
+              <mat-icon>delete</mat-icon> Delete Coffee
+            </button>
+          </div>
+    </mat-card-actions>
+  </mat-card>
+</div>

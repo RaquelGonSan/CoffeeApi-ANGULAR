@@ -1,0 +1,28 @@
+<div class="container">
+<h3 class="text-center mt-5">Add the coffees to the shopping cart</h3>
+
+<table class="table table-dark table-striped">
+
+    <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Origin</th>
+          <th scope="col">Price</th>
+          <th scope="col">Add to cart</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let coffee of coffeeList">
+          <th scope="row">{{coffee.id}}</th>
+          <td>{{coffee.name}}</td>
+          <td>{{coffee.region}}</td>
+          <td>{{coffee.price}}</td>
+         <td> <button type="button" class="btn btn" (click)="newCoffee(coffee)">Add</button></td>
+         
+        </tr>
+      </tbody>
+  
+  </table>
+
+</div>

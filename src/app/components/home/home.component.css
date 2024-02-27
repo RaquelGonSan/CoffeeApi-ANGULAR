@@ -1,0 +1,19 @@
+span{
+    color: BLACK;
+}
+
+h3{
+    font-family: "Kalnia", serif; 
+    font-size: 20px;
+    font-weight: 500;
+}
+
+button{
+    background-color: rgb(231, 123, 0);
+    border-color: rgb(231, 123, 0);
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(114, 51, 0);
+}

@@ -1,0 +1,81 @@
+span{
+    color: BLACK;
+}
+h3{
+    font-family: "Kalnia", serif; 
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.mdc-card {
+    display: inline-flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 31%;
+    height: 580px;
+    background-color: white;
+    margin:10px;
+}
+  
+
+mat-card-title{
+    font-family: "Kalnia", serif; 
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(114, 51, 0);
+        
+}
+
+mat-card-subtitle{
+    font-family: "Kalnia", serif; 
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(231, 123, 0);
+
+}
+.mat-mdc-card-header{
+    display: block;
+}
+
+.span{
+    font-family: "Kalnia", serif; 
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(231, 123, 0);
+}
+
+.example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+  }
+
+
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  
+  .mat-mdc-card-content{
+    height: 140px !important;
+  }
+
+  .button{
+    color: rgb(114, 51, 0);
+    border: none;
+    background-color: antiquewhite;
+    display: block;
+    font-family: "Kalnia", serif; 
+    font-size: 16px;
+
+  }
+  .example-button-container{
+    width: 90%;
+    display: block;
+  }
+
+  mat-card-actions{
+    background-color: antiquewhite;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
